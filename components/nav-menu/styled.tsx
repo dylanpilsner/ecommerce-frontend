@@ -1,4 +1,4 @@
-import { Subtitle, RegularLarge, RegularBody } from "@/ui/typography";
+import { Subtitle } from "@/ui/typography";
 import styled, { keyframes } from "styled-components";
 
 const showsUp = keyframes`

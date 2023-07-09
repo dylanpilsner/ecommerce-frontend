@@ -1,10 +1,16 @@
 import { Layout } from "@/components/layout";
-import { fetchApi, getProductById } from "@/lib/api";
+import { getProductById } from "@/lib/api";
 import { ItemComponent } from "@/components/item-components";
+import Head from "next/head";
 
 export default function ItemPage({ data }: any) {
+  const userData = data.singleProduct;
+
   return (
     <Layout>
+      <Head>
+        <title>{userData.title}</title>
+      </Head>
       <ItemComponent data={data} />
     </Layout>
   );

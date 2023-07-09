@@ -8,8 +8,13 @@ import {
   StyledFooter,
   WhiteRegularLarge,
 } from "./styled";
+import { useIsLogged } from "@/lib/hooks";
 
 export function Footer() {
+  const isLogged = useIsLogged();
+
+  const redirectToLogin = isLogged ? "/profile" : "/signin";
+
   return (
     <StyledFooter>
       <FooterContainer>
@@ -17,7 +22,7 @@ export function Footer() {
           <NextLink path="/signin">
             <WhiteRegularBody>Ingresar</WhiteRegularBody>
           </NextLink>
-          <NextLink path="/profile">
+          <NextLink path={redirectToLogin}>
             <WhiteRegularBody>Mi perfil</WhiteRegularBody>
           </NextLink>
           <NextLink path="/search">

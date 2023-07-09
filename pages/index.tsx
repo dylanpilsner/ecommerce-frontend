@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Layout } from "@/components/layout";
-import { fetchApi, getThreeProducts } from "@/lib/api";
+import { getThreeProducts } from "@/lib/api";
 import { HomeComponent } from "@/components/home-component";
 
 function Home({ data }: any) {

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { ColumnDirectionBox } from "@/ui/box";
 
 type ProductCardsContainerProps = {
   margin?: string;

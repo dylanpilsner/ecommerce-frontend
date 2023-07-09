@@ -1,10 +1,3 @@
-import {
-  Container,
-  MobileSearchBarContianer,
-  StyledHeader,
-  DesktopSearchBarContainer,
-  HeaderContainer,
-} from "./styled";
 import { Burger } from "../burger";
 import { WhiteLogo } from "@/ui/logo";
 import { NavMenu } from "../nav-menu";
@@ -15,6 +8,13 @@ import { useHideSearchBar, useIsLogged } from "@/lib/hooks";
 import Link from "next/link";
 import { SignOutDesktop } from "@/ui/sign-out";
 import { SearchForm } from "../forms";
+import {
+  Container,
+  MobileSearchBarContianer,
+  StyledHeader,
+  DesktopSearchBarContainer,
+  HeaderContainer,
+} from "./styled";
 
 export function Header() {
   const [navMenuStatus, setNavMenuStatus]: any = useState("");

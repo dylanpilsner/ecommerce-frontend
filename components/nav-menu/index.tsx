@@ -10,13 +10,14 @@ type NavMenuProps = {
 
 export function NavMenu({ isLogged, user, isOpen }: NavMenuProps) {
   const sign = isLogged ? "Cerrar sesión" : null;
+  const redirectToLogin = isLogged ? "/profile" : "/signin";
 
   return (
     <NavMenuContainer className={isOpen}>
       <NextLink path="/signin">
         <Nav>Ingresar</Nav>
       </NextLink>
-      <NextLink path="/profile">
+      <NextLink path={redirectToLogin}>
         <Nav>Mi perfil</Nav>
       </NextLink>
       <NextLink path="/search?q=">
