@@ -8,31 +8,33 @@ First, run the development server:
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
 ```
+## Consigna
+Crear una experiencia de usuario fluida y atractiva que sea fácil de usar y proporcione una funcionalidad completa para el e-commerce. Algunas de las páginas que debe tener son:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* / - Página de inicio
+* /signin - Login
+* /profile - Tu perfil
+* /search?q={query} - Búsqueda de productos
+* /item/{itemId} - Detalle de un producto
+* /checkout/{itemId} - Inicia el pago de un producto
+* /thanks - A donde te redirige después de pagar.
+* /logout - Ruta auxiliar (Solo te desloguea y te redirige a la home)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Cuenta de Mercado Pago de prueba
+Email: test_user_1295433133@testuser.com  
+Contraseña: VUYng0UVMh
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Tarjeta de crédito de prueba
+Número: 5031 7557 3453 0604  
+Código de seguridad: 123  
+Vencimiento: 11/25  
+DNI: 11.111.111  
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Backend
+[Repositorio Github](https://github.com/dylanpilsner/ecommerce-backend/)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Deploy
+[Vercel](https://ecommerce-frontend-seven-lovat.vercel.app/)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
