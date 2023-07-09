@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+:root {
+  --azul: #4f7cac;
+  --celeste: #91e5f6;
+  --naranja: #ffc700;
+  --azul-oscuro: #201e50;
+  --fucsia: #e75a7c;
+  --grey-50: #fafafa;
+  --grey-100: #f5f5f5;
+}
